@@ -1,12 +1,36 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import React from 'react'
+import ReactDOM from 'react-dom'
+import App from './App'
+import 'bootstrap/dist/css/bootstrap.css'
+import 'font-awesome/css/font-awesome.min.css'
+import { createGlobalStyle  } from 'styled-components'
 
-ReactDOM.render(<App />, document.getElementById('root'));
+createGlobalStyle `
+  @import url('https://fonts.googleapis.com/css?family=Trirong|Work+Sans');
+  * {
+    font-family: 'Work Sans', 'Trirong', sans-serif;
+  }
+  .content-container {
+    max-width: 900px;
+  }
+  .image-container {
+    max-width: 600px;
+    margin: auto;
+  }
+  .flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .active {
+    background-color: hsl(0, 0%, 91%) !important;
+  }
+  /* Mobile */
+  @media screen and (max-width: 480px) {}
+  /* Tablet */
+  @media screen and (max-width: 768px) {}
+  /* Desktop */
+  @media screen and (max-width: 1024px) {}
+`
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+ReactDOM.render(<App />, document.getElementById('root'))
