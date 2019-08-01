@@ -44,7 +44,7 @@ const NavBar = () => (
       <NavbarBrand href='/'>
         <FontAwesome name='code' size='lg' />
         <b className='mx-2'>
-          Nantipat
+          Test
         </b>
         <FontAwesome name='coffee' size='lg' style={{color: 'red'}} />
       </NavbarBrand>

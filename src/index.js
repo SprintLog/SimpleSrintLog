@@ -3,9 +3,9 @@ import ReactDOM from 'react-dom'
 import App from './App'
 import 'bootstrap/dist/css/bootstrap.css'
 import 'font-awesome/css/font-awesome.min.css'
-import { createGlobalStyle  } from 'styled-components'
+import { createGlobalStyle   } from 'styled-components'
 
-createGlobalStyle `
+createGlobalStyle`
   @import url('https://fonts.googleapis.com/css?family=Trirong|Work+Sans');
   * {
     font-family: 'Work Sans', 'Trirong', sans-serif;
